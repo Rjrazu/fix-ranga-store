@@ -1,3 +1,5 @@
+// Load Products
+
 const loadProducts = () => {
   const url = `https://fakestoreapi.com/products`;
   fetch(url)
@@ -6,7 +8,8 @@ const loadProducts = () => {
 };
 loadProducts();
 
-// show all product in UI 
+// Show All products in UI 
+
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
@@ -30,6 +33,8 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
+
+// Counting Cart
 
 let count = 0;
 const addToCart = (id, price) => {
