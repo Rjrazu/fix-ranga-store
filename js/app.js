@@ -21,10 +21,10 @@ const showProducts = (products) => {
       </div>
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
-      <h2>Price: $ ${product.price}</h2>
-      <h4>Rate: ${rate}</h4>
+      <h3>Price: $ ${product.price}</h3>
+      <h4>Rate: ${rate} <i class="fas fa-star"></i></h4>
       <h4>Rating Count: ${rateCount}</h4>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">Add To Cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
@@ -37,6 +37,8 @@ let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
   updatePrice("price", price);
+
+  // Update Tax
 
   updateTaxAndCharge();
   document.getElementById("total-Products").innerText = count;

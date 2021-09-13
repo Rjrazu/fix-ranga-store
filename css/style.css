@@ -39,27 +39,33 @@ Show All Products
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* border: 1px solid black; */
+  grid-gap: 13px;
   text-align: center;
   width: 100%;
   margin: auto;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
 }
 .single-product {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 4px 4px 7px lightgray;
   padding: 10px;
   transition: 0.6s;
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
-  border: 1px solid cyan;
+  border: 1px solid rgb(21, 194, 194);
 }
 .product-image {
   width: 150px;
   height: 150px;
 }
-
+.fa-star{
+  color: coral;
+}
 /* -----------------------
 Cart Option
  ------------------------*/
