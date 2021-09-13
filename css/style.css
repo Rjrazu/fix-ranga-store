@@ -48,6 +48,8 @@ Show All Products
   justify-content: center;
 }
 .single-product {
+  width: 330px;
+  height: 490px;
   border: 1px solid lightgray;
   border-radius: 10px;
   box-shadow: 4px 4px 7px lightgray;
@@ -55,6 +57,7 @@ Show All Products
   transition: 0.6s;
 }
 .single-product:hover {
+  background-color: rgb(245, 239, 239);
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
   border: 1px solid rgb(21, 194, 194);
